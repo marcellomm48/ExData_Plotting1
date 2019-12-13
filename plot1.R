@@ -20,7 +20,7 @@ febdata$date_time <- as.POSIXct(febdata$date_time)
 par(mfrow = c(1,1), pty = "s")
 
 # plots chart to PNG
-png(file = "plot3.png")
+png(file = "plot1.png")
 
 hist(febdata$Global_active_power, 
      col = "Red", 
