@@ -17,11 +17,11 @@ febdata$date_time <- as.POSIXct(febdata$date_time)
 par(mfrow = c(1,1), pty = "s")
 
 # plots chart to PNG
-png(file = "plot3.png")
+png(file = "plot3.png", width = 480, height = 480)
 
 with(febdata, plot(date_time, Sub_metering_1, col = "black", type = "l", ylab = "Energy sub metering", xlab = ""))
 with(febdata, lines(date_time, Sub_metering_2, col = "red"))
 with(febdata, lines(date_time, Sub_metering_3, col = "blue"))
-legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lwd = c(1,1), col = c("black", "red", "blue"))
+legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lwd = c(1,1,1), col = c("black", "red", "blue"))
 
 dev.off()

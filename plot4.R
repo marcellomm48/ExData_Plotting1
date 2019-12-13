@@ -15,7 +15,7 @@ febdata$date_time <- as.POSIXct(febdata$date_time)
 
 
 # plots chart to PNG
-png(file = "plot4.png")
+png(file = "plot4.png", width = 480, height = 480)
 
 par(mfrow = c(2,2), pty = "m")
 plot(febdata$date_time, febdata$Global_active_power, type = "l", ylab = "Global Active Power (kilowatts)", xlab = "")
